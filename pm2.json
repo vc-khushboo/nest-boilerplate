@@ -1,0 +1,21 @@
+{
+    "apps": [
+        {
+            "name": "tendio",
+            "script": "node",
+            "args": "dist/src/main.js",
+            "ignoreWatch": [
+                "[\\/\\\\]\\./",
+                "node_modules",
+                "src/public"
+            ],
+            "watch": false,
+            "env": {
+                "NODE_ENV": "dev"
+            },
+            "env_production": {
+                "NODE_ENV": "prod"
+            }
+        }
+    ]
+}
